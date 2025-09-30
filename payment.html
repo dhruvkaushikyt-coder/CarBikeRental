@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Payment Page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .payment-container {
+            max-width: 500px;
+            margin: 50px auto;
+            background: #f4f4f4;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
+        }
+        .payment-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #1e3c72;
+        }
+        .payment-container label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+        .payment-container input, .payment-container select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .payment-container button {
+            width: 100%;
+            padding: 12px;
+            background: #1e3c72;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .payment-container button:hover {
+            background: #16325c;
+        }
+    </style>
+</head>
+<body>
+    <div class="payment-container">
+        <h2>Demo Payment Page</h2>
+        <form>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <label for="vehicle">Vehicle</label>
+            <select id="vehicle">
+                <option>Honda City - ₹1500/day</option>
+                <option>Mahindra Scorpio - ₹2000/day</option>
+                <option>Royal Enfield - ₹700/day</option>
+                <option>Bajaj Pulsar 150 - ₹500/day</option>
+            </select>
+
+            <label for="date">Booking Date</label>
+            <input type="date" id="date" required>
+
+            <label for="card">Card Number</label>
+            <input type="text" id="card" placeholder="1111 2222 3333 4444" required>
+
+            <label for="cvv">CVV</label>
+            <input type="password" id="cvv" placeholder="123" required>
+
+            <button type="submit">Pay Now</button>
+        </form>
+    </div>
+</body>
+</html>
